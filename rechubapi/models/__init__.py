@@ -2,3 +2,8 @@ from .activity import Activity
 from .type import Type
 from .status import Status
 from .container import Container
+from .trip import Trip
+from .friend import Friend
+from .item import Item
+from .tripcontainer import TripContainer
+from .tripfriend import TripFriend

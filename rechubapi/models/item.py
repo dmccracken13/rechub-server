@@ -1,4 +1,4 @@
-from django.db.models.deletion import DO_NOTHING
+from django.db.models.deletion import DO_NOTHING, CASCADE
 from rechubapi.models.activity import Activity
 from rechubapi.models import Status
 from rechubapi.models import Container
@@ -10,7 +10,7 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 class Item(models.Model):
 
     name = models.CharField(max_length=25)
-    user = models.OneToOneField(User, on_delete=models.DO_NOTHING,)
+    user = models.ForeignKey(User, on_delete=models.CASCADE,)
     activity = models.ForeignKey(Activity, on_delete=models.DO_NOTHING)
     container = models.ForeignKey(Container, on_delete=models.DO_NOTHING)
     status = models.ForeignKey(Status, on_delete=models.DO_NOTHING)
