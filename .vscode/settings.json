@@ -1,0 +1,10 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "rechub.db",
+            "database": "db.sqlite3"
+        }
+    ]
+}
