@@ -1,0 +1,10 @@
+[
+    {
+        "model": "rechubapi.tripfriend",
+        "pk": 1,
+        "fields": {
+            "friend": 2,
+            "trip": 1
+        }
+    }
+]

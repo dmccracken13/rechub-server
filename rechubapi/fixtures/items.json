@@ -6,7 +6,7 @@
             "name": "Tent",
             "user": 1,
             "activity": 3,
-            "container": 0,
+            "container": null,
             "status": 2,
             "type": 1,
             "quantity": 1
