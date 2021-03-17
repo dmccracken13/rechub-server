@@ -28,7 +28,7 @@ class Activities(ViewSet):
         Returns:
             Response -- JSON serialized list of activities
         """
-        activities = Activity.objects.all()
+        activities = Activity.objects.filter(user=request.auth.user)
 
         # Note the addtional `many=True` argument to the
         # serializer. It's needed when you are serializing

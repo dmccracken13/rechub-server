@@ -28,7 +28,7 @@ class Containers(ViewSet):
         Returns:
             Response -- JSON serialized list of containers
         """
-        containers = Container.objects.all()
+        containers = Container.objects.filter(user=request.auth.user)
 
         # Note the addtional `many=True` argument to the
         # serializer. It's needed when you are serializing

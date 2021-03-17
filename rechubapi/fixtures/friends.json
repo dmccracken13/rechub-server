@@ -1,6 +1,6 @@
 [
     {
-        "model": "rechubapi.container",
+        "model": "rechubapi.friend",
         "pk": 1,
         "fields": {
             "friend": 2,
@@ -8,7 +8,7 @@
         }
     },
     {
-        "model": "rechubapi.container",
+        "model": "rechubapi.friend",
         "pk": 2,
         "fields": {
             "friend": 1,

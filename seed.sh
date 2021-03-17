@@ -10,6 +10,7 @@ python manage.py loaddata containers
 python manage.py loaddata statuses
 python manage.py loaddata tokens
 python manage.py loaddata types
+python manage.py loaddata friends
 python manage.py loaddata trips
 python manage.py loaddata items
 python manage.py loaddata tripcontainers

@@ -18,11 +18,12 @@ from django.conf.urls import include
 from django.urls import path
 from rest_framework import routers
 from rechubapi.views import register_user, login_user
-from rechubapi.views import Activities, Containers
+from rechubapi.views import Activities, Containers, Friends
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'activities', Activities, 'activity')
 router.register(r'containers', Containers, 'container')
+router.register(r'friends', Friends, 'friend')
 
 
 urlpatterns = [
