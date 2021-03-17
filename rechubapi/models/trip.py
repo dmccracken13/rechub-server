@@ -5,10 +5,10 @@ from rechubapi.models import Container
 
 
 class Trip(models.Model):
-
-    name = models.CharField(max_length=25)
+    location = models.CharField(max_length=25)
     activity = models.ForeignKey(Activity, on_delete=models.DO_NOTHING,)
     container = models.ForeignKey(Container, on_delete=models.DO_NOTHING)
+    date = models.DateTimeField(auto_now=False, auto_now_add=False)
 
     class Meta:
         verbose_name = ("trip")

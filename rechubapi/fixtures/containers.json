@@ -1,0 +1,26 @@
+[
+    {
+        "model": "rechubapi.container",
+        "pk": 1,
+        "fields": {
+            "name": "Climbing Bag",
+            "user": 1
+        }
+    },
+    {
+        "model": "rechubapi.container",
+        "pk": 2,
+        "fields": {
+            "name": "Ski Bag",
+            "user": 1
+        }
+    },
+    {
+        "model": "rechubapi.container",
+        "pk": 3,
+        "fields": {
+            "name": "Camping Kit",
+            "user": 1
+        }
+    }
+]

@@ -1,0 +1,93 @@
+[
+    {
+        "model": "rechubapi.item",
+        "pk": 1,
+        "fields": {
+            "name": "Tent",
+            "user": 1,
+            "activity": 3,
+            "container": 0,
+            "status": 2,
+            "type": 1,
+            "quantity": 1
+        }
+    },
+    {
+        "model": "rechubapi.item",
+        "pk": 2,
+        "fields": {
+            "name": "Climbing Harness",
+            "user": 1,
+            "activity": 1,
+            "container": 1,
+            "status": 1,
+            "type": 1,
+            "quantity": 1
+        }
+    },
+    {
+        "model": "rechubapi.item",
+        "pk": 3,
+        "fields": {
+            "name": "Skis",
+            "user": 1,
+            "activity": 2,
+            "container": 0,
+            "status": 1,
+            "type": 1,
+            "quantity": 1
+        }
+    },
+    {
+        "model": "rechubapi.item",
+        "pk": 3,
+        "fields": {
+            "name": "Ski Helmet",
+            "user": 1,
+            "activity": 2,
+            "container": 2,
+            "status": 1,
+            "type": 1,
+            "quantity": 1
+        }
+    },
+    {
+        "model": "rechubapi.item",
+        "pk": 3,
+        "fields": {
+            "name": "Mallet",
+            "user": 1,
+            "activity": 3,
+            "container": 3,
+            "status": 1,
+            "type": 1,
+            "quantity": 1
+        }
+    },
+    {
+        "model": "rechubapi.item",
+        "pk": 3,
+        "fields": {
+            "name": "Zip Ties",
+            "user": 1,
+            "activity": 3,
+            "container": 3,
+            "status": 4,
+            "type": 2,
+            "quantity": 15
+        }
+    },
+    {
+        "model": "rechubapi.item",
+        "pk": 3,
+        "fields": {
+            "name": "Tent Stakes",
+            "user": 1,
+            "activity": 3,
+            "container": 3,
+            "status": 1,
+            "type": 1,
+            "quantity": 10
+        }
+    }
+]

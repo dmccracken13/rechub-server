@@ -1,0 +1,12 @@
+[
+    {
+        "model": "rechubapi.trip",
+        "pk": 1,
+        "fields": {
+            "location": "Smith Rock",
+            "user": 1,
+            "date": "05-03-21",
+            "activity": 1
+        }
+    }
+]

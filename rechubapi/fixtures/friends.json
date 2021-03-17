@@ -1,0 +1,18 @@
+[
+    {
+        "model": "rechubapi.container",
+        "pk": 1,
+        "fields": {
+            "friend": 2,
+            "user": 1
+        }
+    },
+    {
+        "model": "rechubapi.container",
+        "pk": 2,
+        "fields": {
+            "friend": 1,
+            "user": 2
+        }
+    }
+]

@@ -1,0 +1,11 @@
+[
+    {
+        "model": "rechubapi.tripcontainer",
+        "pk": 1,
+        "fields": {
+            "name": "Climbing Bag",
+            "container": 1,
+            "trip": 1
+        }
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "model": "rechubapi.status",
+        "pk": 1,
+        "fields": {
+            "name": "Ok"
+        }
+    },
+    {
+        "model": "rechubapi.status",
+        "pk": 2,
+        "fields": {
+            "name": "Needs Repaired"
+        }
+    },
+    {
+        "model": "rechubapi.status",
+        "pk": 3,
+        "fields": {
+            "name": "Needs Replaced"
+        }
+    },
+    {
+        "model": "rechubapi.status",
+        "pk": 4,
+        "fields": {
+            "name": "Needs Refilled"
+        }
+    }
+]
