@@ -4,8 +4,6 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
 from rechubapi.models import Friend
-from django.contrib.auth.models import User
-
 
 
 class Friends(ViewSet):
