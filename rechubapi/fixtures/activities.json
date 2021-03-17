@@ -1,0 +1,26 @@
+[
+    {
+        "model": "rechubapi.activity",
+        "pk": 1,
+        "fields": {
+            "name": "Climbing",
+            "user": 1
+        }
+    },
+    {
+        "model": "rechubapi.activity",
+        "pk": 2,
+        "fields": {
+            "name": "Skiing",
+            "user": 1
+        }
+    },
+    {
+        "model": "rechubapi.activity",
+        "pk": 3,
+        "fields": {
+            "name": "Camping",
+            "user": 1
+        }
+    }
+]

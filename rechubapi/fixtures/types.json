@@ -1,0 +1,16 @@
+[
+    {
+        "model": "rechubapi.type",
+        "pk": 1,
+        "fields": {
+            "name": "Asset"
+        }
+    },
+    {
+        "model": "rechubapi.type",
+        "pk": 2,
+        "fields": {
+            "name": "consumable"
+        }
+    }
+]
