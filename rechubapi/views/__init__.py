@@ -5,3 +5,5 @@ from .container import Containers
 from .friend import Friends
 from .status import Statuses
 from .item import Items
+from .trip import Trips
+from .type import Types
