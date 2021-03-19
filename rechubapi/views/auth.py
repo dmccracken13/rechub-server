@@ -57,12 +57,6 @@ def register_user(request):
         last_name=req_body['last_name']
     )
 
-    # Now save the extra info in the rechubapi_user table
-    new_user = User.objects.create(
-        bio=req_body['bio'],
-        user=new_user
-    )
-
     # Commit the user to the database by saving it
     new_user.save()
 
