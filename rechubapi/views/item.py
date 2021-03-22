@@ -6,6 +6,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework import serializers
 from rechubapi.models import Item, Activity, Container, Status, Type
+from django.contrib.auth.models import User
 
 
 class Items(ViewSet):
@@ -27,8 +28,11 @@ class Items(ViewSet):
         item.user = user
         activity = Activity.objects.get(pk=request.data["activity"])
         item.activity = activity
-        container = Container.objects.get(pk=request.data["container"])
-        item.container = container
+        try: 
+            container = Container.objects.get(pk=request.data["container"])
+            item.container = container
+        except Container.DoesNotExist: 
+            item.container = None
         item_status = Status.objects.get(pk=request.data["status"])
         item.status = item_status
         type = Type.objects.get(pk=request.data["type"])
@@ -120,12 +124,24 @@ class Items(ViewSet):
             items, many=True, context={'request': request})
         return Response(serializer.data)
 
-class ItemSerializer(serializers.ModelSerializer):
+class UserItemSerializer(serializers.ModelSerializer):
     """JSON serializer for items
 
     Arguments:
         serializers
     """
     class Meta:
+        model = User
+        fields = ('id',)
+
+class ItemSerializer(serializers.ModelSerializer):
+    """JSON serializer for items
+
+    Arguments:
+        serializers
+    """
+    user = UserItemSerializer (many=False)
+    class Meta:
         model = Item
         fields = ('id', 'name', 'user', 'activity', 'container', 'status', 'type', 'quantity' )
+        depth = 1
