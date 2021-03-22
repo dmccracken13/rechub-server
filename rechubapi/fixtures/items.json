@@ -32,7 +32,7 @@
             "name": "Skis",
             "user": 1,
             "activity": 2,
-            "container": 0,
+            "container": null,
             "status": 1,
             "type": 1,
             "quantity": 1
