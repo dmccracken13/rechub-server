@@ -66,8 +66,11 @@ class Items(ViewSet):
         item.user = user
         activity = Activity.objects.get(pk=request.data["activity"])
         item.activity = activity
-        container = Container.objects.get(pk=request.data["container"])
-        item.container = container
+        try: 
+            container = Container.objects.get(pk=request.data["container"])
+            item.container = container
+        except Container.DoesNotExist: 
+            item.container = None        
         item_status = Status.objects.get(pk=request.data["status"])
         item.status = item_status
         type = Type.objects.get(pk=request.data["type"])
